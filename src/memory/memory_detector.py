@@ -285,7 +285,9 @@ class MemoryDetector:
         except Exception:
             return None
 
-        for base, size in regions:
+        for region in regions:
+            base = region.base_address
+            size = region.size
             if base < 0x00600000 or base > 0x7FFF0000:
                 continue
             if size > 0x08000000:   # skip >128 MB regions
