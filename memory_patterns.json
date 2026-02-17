@@ -1,0 +1,165 @@
+{
+  "game": "iDate Revival",
+  "process": "iDate.exe",
+  "architecture": "x86",
+  "base_address": "0x00400000",
+  "engine": "G-Blender_1641.DLL",
+  "resolution": {"width": 1024, "height": 768},
+
+  "confirmed": {
+    "resolution_width": {
+      "name": "resolution_width",
+      "address": "0x00000000005AD114",
+      "address_int": 5951764,
+      "offsets": [],
+      "offsets_int": [],
+      "value_type": "int32",
+      "module_name": "",
+      "module_offset": "0x0"
+    },
+    "resolution_height": {
+      "name": "resolution_height",
+      "address": "0x00000000005AD118",
+      "address_int": 5951768,
+      "offsets": [],
+      "offsets_int": [],
+      "value_type": "int32",
+      "module_name": "",
+      "module_offset": "0x0"
+    },
+    "frame_counter": {
+      "name": "frame_counter",
+      "address": "0x00000000005C60F8",
+      "address_int": 6054136,
+      "offsets": [],
+      "offsets_int": [],
+      "value_type": "int32",
+      "module_name": "",
+      "module_offset": "0x0"
+    },
+    "beat_sub_counter": {
+      "name": "beat_sub_counter",
+      "address": "0x00000000005C60F0",
+      "address_int": 6054128,
+      "offsets": [],
+      "offsets_int": [],
+      "value_type": "int32",
+      "module_name": "",
+      "module_offset": "0x0"
+    },
+    "game_timer": {
+      "name": "game_timer",
+      "address": "0x00000000005C5DD4",
+      "address_int": 6053332,
+      "offsets": [],
+      "offsets_int": [],
+      "value_type": "int32",
+      "module_name": "",
+      "module_offset": "0x0"
+    },
+    "tick_timer_1": {
+      "name": "tick_timer_1",
+      "address": "0x00000000005C60DC",
+      "address_int": 6054108,
+      "offsets": [],
+      "offsets_int": [],
+      "value_type": "int32",
+      "module_name": "",
+      "module_offset": "0x0"
+    },
+    "is_playing": {
+      "name": "is_playing",
+      "address": "0x00000000005C25E8",
+      "address_int": 6038504,
+      "offsets": [],
+      "offsets_int": [],
+      "value_type": "int32",
+      "module_name": "",
+      "module_offset": "0x0"
+    },
+    "score": {
+      "name": "score",
+      "address": "0x00000000001E07E0",
+      "address_int": 1968096,
+      "offsets": [],
+      "offsets_int": [],
+      "value_type": "int32",
+      "module_name": "",
+      "module_offset": "0x0"
+    },
+    "combo": {
+      "name": "combo",
+      "address": "0x00000000001E0110",
+      "address_int": 1966352,
+      "offsets": [],
+      "offsets_int": [],
+      "value_type": "int32",
+      "module_name": "",
+      "module_offset": "0x0"
+    },
+    "judgment_counter": {
+      "name": "judgment_counter",
+      "address": "0x00000000001E07D4",
+      "address_int": 1968084,
+      "offsets": [],
+      "offsets_int": [],
+      "value_type": "int32",
+      "module_name": "",
+      "module_offset": "0x0"
+    },
+    "total_notes": {
+      "name": "total_notes",
+      "address": "0x00000000001E001C",
+      "address_int": 1966108,
+      "offsets": [],
+      "offsets_int": [],
+      "value_type": "int32",
+      "module_name": "",
+      "module_offset": "0x0"
+    },
+    "hit_counter": {
+      "name": "hit_counter",
+      "address": "0x00000000001E00A0",
+      "address_int": 1966240,
+      "offsets": [],
+      "offsets_int": [],
+      "value_type": "int32",
+      "module_name": "",
+      "module_offset": "0x0"
+    },
+    "game_state_ptr": {
+      "name": "game_state_ptr",
+      "address": "0x00000000006A00E4",
+      "address_int": 6946020,
+      "offsets": [],
+      "offsets_int": [],
+      "value_type": "uint32",
+      "module_name": "",
+      "module_offset": "0x0"
+    }
+  },
+
+  "note_array": {
+    "region_start_int": 7486208,
+    "region_size": 2048,
+    "slot_stride": 64,
+    "num_slots": 20,
+    "magic_marker": 412395245,
+    "struct_offsets": {
+      "active_flag_1": 0,
+      "active_flag_2": 4,
+      "type_flag": 8,
+      "spawn_frame": 16,
+      "position_x": 32,
+      "marker_1": 36,
+      "position_x2": 40,
+      "marker_2": 44,
+      "position_y": 48,
+      "marker_3": 52,
+      "position_y2": 56,
+      "marker_4": 60,
+      "hit_state": 64,
+      "hit_confirm": 72
+    }
+  }
+}

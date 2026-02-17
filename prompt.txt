@@ -1,0 +1,40 @@
+Remove CV dection in the program completely and just use memory detection and reader, and also the current implementation is not working as it's not detecting when it must execute a macro and it is just frantically spamming random macro inputs, additionally use a library to improve the implementation and also you missed the hand note or the space note not just the 4 notes
+
+FIX THE ERRORS AND ITERATE ALL OVER THEM UNTIL IT IS DONE!
+
+USE TEST FILES TO TEST MEMORY VALUES AND ITERATE ALOT OF TIMES UNTIL YOU GET THE DESIRED RESULT!
+
+Additionally the Detection overlay is not showing the note detection SO MAKE SURE MEMORY READER AND DETECTION OVERLAY ARE ALIGNED WITH EACH OTHER PROPERLY!
+
+While you are testing on getting the specific memory values you can certainly assume that the I, the user is playing the game on the background 
+
+Additionally you would just need to get the following
+The Notes in order from left to right
+Time frame of each notes that are needed to be triggered by their corresponding inputs that will be executed by the macro
+and the position of the notes in the game(X and Y pos) that will be given to the overlay and display it as a detection.
+finally you can create many test files as you like to validate the overlay, notes and vice versa
+
+while testing since I am playing it on the background you can always include the overlay detection that will be put ontop of the target game window and take a screenshot and manually verify it yourself to check if you are reading the right memory
+
+Again I want you to fully automate this plan -> test -> implement -> repeat workflow again and again until you have the expected results
+
+you are allowed to use third party libraries but do not hallucinate on their documentation and instead use context7
+
+
+---------------------------------------------------------
+Hello, instead of actively searching through the memory of the target program while it is running the background, i have created a dump folder with two files, the dumped exe file and the C file decompiled from the exe file
+
+Now your task here is to search through the entirety of the dumped files, you may decompile the exe file using a third party library again, but remember to use context7
+
+Your task here is as follows:
+Remove Template Based Detection altogether but keep the templates folder,
+Search through the dumped files to get accurate results on what to read 
+You would need to get the following:
+    - The Notes that will be executed in order
+    - The timeframe where the notes would be executed
+    - Which of the notes are needed to be executed within the timeframe
+    - the corresponding inputs of the notes that are needed to be executed within the timeframe
+
+Since the exe is a decompiled program it is upto you how you could test it out, you can use Ghidra MCP to decompile the exe file again. 
+
+Additionally you should completely wipe out the CV templated-based detection as it is not required anymore, I wish to completely remove the mentioned feature both in the codebase and in the program altogether but keep the templates folder files 

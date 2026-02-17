@@ -1,0 +1,6 @@
+[console_scripts]
+idate = src.cli:main
+idate-gui = src.gui:main
+
+[gui_scripts]
+idate-gui = src.gui:main

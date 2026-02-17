@@ -1,0 +1,39 @@
+[project]
+name = "idate"
+version = "0.1.0"
+description = "Automated rhythm-game macro with CV detection and pattern execution"
+requires-python = ">=3.10"
+dependencies = [
+    "mss>=9.0.1",
+    "opencv-python>=4.9.0",
+    "numpy>=1.26.0",
+    "pygame-ce>=2.5.6",
+    "pynput>=1.7.6",
+    "tomli>=2.0.1",
+    "pydantic>=2.5.0",
+    "customtkinter>=5.2.0",
+    "pillow>=10.0.0",
+    "ultralytics>=8.0.0",
+    "polars[rtcompat]>=1.38.1",
+    "roboflow>=1.1.66",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+]
+fast = [
+    "dxcam>=0.0.5",  # optional high-fps capture on Windows
+]
+
+[project.scripts]
+idate = "src.cli:main"
+idate-gui = "src.gui:main"
+
+[project.gui-scripts]
+idate-gui = "src.gui:main"
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"

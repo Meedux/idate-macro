@@ -1,0 +1,16 @@
+__init__
+capture
+cli
+config
+debug
+fast_detector
+gui
+input
+memory
+ml
+overlay
+patterns
+rhythm_detector
+runtime
+timing
+vision

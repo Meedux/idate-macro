@@ -1,0 +1,53 @@
+# Keymap configuration for rhythm game inputs
+# Maps lane indices and directional inputs to keyboard keys
+
+[directions]
+# Single direction inputs
+up = "up"
+down = "down"
+left = "left"
+right = "right"
+
+# Combo direction inputs (two keys pressed simultaneously)
+up_left = ["up", "left"]
+down_left = ["down", "left"]
+up_right = ["up", "right"]
+down_right = ["down", "right"]
+
+[lanes]
+# Map each lane index to a key or direction
+# For 8-lane mode, typical mapping:
+# Lanes 0-3: left hand (a, s, d, f or arrows)
+# Lanes 4-7: right hand (j, k, l, ; or arrows)
+
+# Using arrow keys for 4-lane:
+# 0 = "left"
+# 1 = "down"
+# 2 = "up"
+# 3 = "right"
+
+# Using arrows + combos for 8-lane:
+0 = "left"
+1 = "down"
+2 = "up"
+3 = "right"
+4 = ["up", "left"]      # up_left
+5 = ["down", "left"]    # down_left
+6 = ["up", "right"]     # up_right
+7 = ["down", "right"]   # down_right
+
+[timing]
+# Key press duration in milliseconds
+press_duration_ms = 30
+
+# Minimum gap between consecutive presses (same key)
+min_gap_ms = 10
+
+# Stagger delay for chord keys in milliseconds (0 = simultaneous)
+chord_stagger_ms = 0
+
+[aliases]
+# Human-readable aliases for complex inputs
+# These can be referenced in patterns
+low_left = "down_left"
+low_right = "down_right"
